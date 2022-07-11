@@ -6,5 +6,9 @@ build:
     context: ../../
     docker:
       target: app
+  - image: registry.tino.sh/pocketbase-proxy
+    context: ../../
+    docker:
+      target: proxy
 deploy:
   kustomize: {}

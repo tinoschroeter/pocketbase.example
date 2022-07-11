@@ -16,6 +16,15 @@ spec:
         app: pocketbase-backend
     spec:
       containers:
+      - name: pocketbase-proxy
+        image: registry.tino.sh/pocketbase-proxy
+        resources:
+          requests:
+            memory: "50Mi"
+            cpu: "30m"
+          limits:
+            memory: "64Mi"
+            cpu: "100m"
       - name: pocketbase-backend
         image: registry.tino.sh/pocketbase-app
         volumeMounts:

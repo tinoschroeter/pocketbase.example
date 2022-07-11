@@ -17,7 +17,7 @@ spec:
           service:
             name: pocketbase-app-service
             port:
-              number: 80
+              number: 8090
   tls:
   - hosts:
     - pocketbase.tino.sh

@@ -20,3 +20,8 @@ COPY app pb_public
 COPY --from=builder /srv/pocketbase .
 
 CMD ["/srv/pocketbase", "serve"]
+
+FROM nginx:1.23.0 AS proxy
+
+WORKDIR /usr/share/nginx/html
+COPY proxy/nginx.conf /etc/nginx/conf.d/default.conf
