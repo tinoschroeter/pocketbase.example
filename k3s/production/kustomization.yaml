@@ -1,0 +1,5 @@
+namespace: pocketbase
+bases:
+  - ../base
+  - pvc.yaml
+  - ingress.yaml
