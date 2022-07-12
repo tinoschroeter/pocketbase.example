@@ -1,6 +1,6 @@
 FROM alpine:3.16.0 AS builder
 
-ARG VERSION=0.2.3
+ARG VERSION=0.2.4
 
 RUN apk add --no-cache wget unzip
 
